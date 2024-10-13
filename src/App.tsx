@@ -38,13 +38,21 @@ function App() {
       <div>
         <Card
           title="Yello banana"
-          img="https://as2.ftcdn.net/v2/jpg/01/62/34/03/1000_F_162340363_G8RrYxxLfu6k39ZiZHavrmcOYVzUn33t.jpg "
           text="this is a yellow banana which is very healthy and help to prevent the different disease s like heart abnd some dibatoes"
+          img={{
+            width: 200,
+            alt: "banana",
+            src: "https://as2.ftcdn.net/v2/jpg/01/62/34/03/1000_F_162340363_G8RrYxxLfu6k39ZiZHavrmcOYVzUn33t.jpg ",
+          }}
         />
         <Card
           title="Banana 2"
           text="her is the more text information about the bananaq. which is has more benifits and prevent the helth and the improve the living standards"
-          img="https://static.toiimg.com/thumb/imgsize-125550,msid-98944347,width-375,height-210,resizemode-75/98944347.jpg"
+          img={{
+            width: 200,
+            alt: "banana",
+            src: "https://static.toiimg.com/thumb/imgsize-125550,msid-98944347,width-375,height-210,resizemode-75/98944347.jpg",
+          }}
         />
       </div>
       <Accordian
