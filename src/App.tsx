@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./App.css";
+import "./index.css";
 import Banner from "./Banner";
 import Card from "./Card";
+import Accordian from "./Accordia";
 const items = [
   { label: "name", href: "./" },
   { label: "about", href: "./about" },
@@ -14,7 +16,7 @@ const items = [
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
+    <div className="">
       <h2>Here is the my Project name is called banana</h2>
       <div className="menu">
         <ul>
@@ -45,6 +47,18 @@ function App() {
           img="https://static.toiimg.com/thumb/imgsize-125550,msid-98944347,width-375,height-210,resizemode-75/98944347.jpg"
         />
       </div>
+      <Accordian
+        header="Apple"
+        text="Apple is red and green, which is healthy and have so many benifits to eat."
+      />
+      <Accordian
+        header="Apple"
+        text="Apple is red and green, which is healthy and have so many benifits to eat."
+      />
+      <Accordian
+        header="Apple"
+        text="Apple is red and green, which is healthy and have so many benifits to eat."
+      />
     </div>
   );
 }
